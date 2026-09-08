@@ -1,0 +1,9 @@
+2026-08-08 13:50:51,999 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260808_135051.log
+2026-08-08 13:50:52,070 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 13:50:58,176 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-08 13:51:13,493 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 13:51:20,822 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-08 13:52:07,879 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 13:52:14,689 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-08 13:53:23,781 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 13:53:31,284 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"

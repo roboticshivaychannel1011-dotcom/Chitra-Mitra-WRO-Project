@@ -1,0 +1,24 @@
+2026-08-06 12:57:04,752 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260806_125704.log
+2026-08-06 12:57:04,752 | INFO | Running startup checks...
+2026-08-06 12:57:04,752 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-06 12:57:04,752 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-06 12:57:04,752 | INFO | Found: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 12:57:04,752 | INFO | Checking offline speech model...
+2026-08-06 12:57:05,057 | INFO | Vosk model loaded.
+2026-08-06 12:57:05,057 | INFO | Checking Piper TTS...
+2026-08-06 12:57:05,058 | INFO | Piper TTS ready.
+2026-08-06 12:57:05,059 | INFO | Microphone detected.
+2026-08-06 12:57:05,059 | INFO | Startup checks complete.
+2026-08-06 12:57:05,059 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 12:57:05,063 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 12:57:27,997 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 12:57:59,432 | INFO | User question: yes i would like to know more about it how it got famous
+2026-08-06 12:57:59,433 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 12:58:26,971 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 12:58:26,974 | INFO | Answer 1: For centuries, this style of art remained a quiet tribal tradition in the lush, hilly regions of Maharashtra. Created mostly by tribal women on the mud walls of their homes, these paintings were never meant for galleries or markets. Instead, they were sacred expressions created specifically for special occasions like weddings, harvests, and fertility rituals. 
+
+The major turning point came in the 1970s, largely thanks to a visionary artist named Jivya Soma Mashe. He broke away from tradition by painting these iconic stick figures and geometric shapes on paper and canvas rather than just village walls. His extraordinary talent caught the attention of art patrons and government officials, who brought his work to national and international exhibitions. 
+
+Mashe demonstrated that these simple white geometric forms—composed of basic shapes like triangles, circles, and lines—could tell deeply expressive stories about community life, nature, and joy. Today, this vibrant art form is celebrated globally, gracing everything from high-end art galleries to modern textiles, home decor, and large public murals.
+2026-08-06 12:59:58,055 | INFO | User question: no i don't have another question thank you
+2026-08-06 12:59:58,055 | INFO | AFC is enabled with max remote calls: 10.

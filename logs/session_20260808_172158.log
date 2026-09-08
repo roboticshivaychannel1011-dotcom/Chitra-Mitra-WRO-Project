@@ -1,0 +1,23 @@
+2026-08-08 17:21:58,666 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260808_172158.log
+2026-08-08 17:21:58,666 | INFO | Running startup checks...
+2026-08-08 17:21:58,668 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-08 17:21:58,668 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-08 17:21:58,668 | INFO | Checking offline speech model...
+2026-08-08 17:21:59,023 | INFO | Vosk model loaded.
+2026-08-08 17:21:59,023 | INFO | Checking Piper TTS...
+2026-08-08 17:21:59,024 | INFO | Piper TTS ready.
+2026-08-08 17:21:59,025 | INFO | Microphone detected.
+2026-08-08 17:21:59,025 | INFO | Startup checks complete.
+2026-08-08 17:21:59,025 | INFO | Capturing artwork from webcam...
+2026-08-08 17:22:07,048 | INFO | Captured artwork image: E:\pythonProject\art-expert\captures\artwork.jpg
+2026-08-08 17:22:07,048 | INFO | Capture reason: Image captured successfully.
+2026-08-08 17:22:07,048 | INFO | Capture metrics: {'brightness': 186.18086163014465, 'contrast': 54.02772298832363, 'blur_score': 181.9092971206772, 'center_edge_density': 0.09877711592347233}
+2026-08-08 17:22:07,048 | INFO | Identifying artwork from webcam capture...
+2026-08-08 17:22:07,052 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 17:22:23,513 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-08 17:23:15,011 | INFO | User question: tell me more about this
+2026-08-08 17:23:15,012 | INFO | Gemini attempt 1/3
+2026-08-08 17:23:15,013 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 17:23:22,840 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-08 17:23:22,842 | INFO | Answer 1: Welcome! This traditional painting comes from tribal communities in India, capturing daily life, nature, and celebrations using simple geometric shapes. It comes from It originates from the Warli tribe in Maharashtra, India.. It became famous because It gained world renown for its minimalist style, using basic shapes like triangles and... Its cultural impact is Traditionally painted on mud walls during harvests and weddings, it symbolises community harmony, joy...
+2026-08-08 17:24:05,755 | INFO | User question: no

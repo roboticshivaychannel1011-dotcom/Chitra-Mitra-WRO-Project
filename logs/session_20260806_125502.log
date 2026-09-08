@@ -1,0 +1,17 @@
+2026-08-06 12:55:02,081 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260806_125502.log
+2026-08-06 12:55:02,081 | INFO | Running startup checks...
+2026-08-06 12:55:02,081 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-06 12:55:02,081 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-06 12:55:02,081 | INFO | Found: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 12:55:02,081 | INFO | Checking offline speech model...
+2026-08-06 12:55:02,417 | INFO | Vosk model loaded.
+2026-08-06 12:55:02,417 | INFO | Checking Piper TTS...
+2026-08-06 12:55:02,417 | INFO | Piper TTS ready.
+2026-08-06 12:55:02,418 | INFO | Microphone detected.
+2026-08-06 12:55:02,418 | INFO | Startup checks complete.
+2026-08-06 12:55:02,418 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 12:55:02,428 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 12:55:21,640 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 12:55:59,844 | WARNING | Speech input failed: User chose retry.
+2026-08-06 12:56:23,432 | WARNING | Speech input failed: User chose retry.
+2026-08-06 12:56:54,229 | WARNING | Speech input failed: User chose retry.

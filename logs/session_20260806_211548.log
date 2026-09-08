@@ -1,0 +1,25 @@
+2026-08-06 21:15:48,003 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260806_211548.log
+2026-08-06 21:15:48,003 | INFO | Running startup checks...
+2026-08-06 21:15:48,003 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-06 21:15:48,003 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-06 21:15:48,003 | INFO | Found: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 21:15:48,003 | INFO | Checking offline speech model...
+2026-08-06 21:15:48,298 | INFO | Vosk model loaded.
+2026-08-06 21:15:48,298 | INFO | Checking Piper TTS...
+2026-08-06 21:15:48,299 | INFO | Piper TTS ready.
+2026-08-06 21:15:48,299 | INFO | Microphone detected.
+2026-08-06 21:15:48,299 | INFO | Startup checks complete.
+2026-08-06 21:15:48,300 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 21:15:48,303 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 21:15:54,704 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 21:16:19,158 | INFO | User question: i want to know more about it
+2026-08-06 21:16:19,159 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 21:16:29,324 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 21:16:29,326 | INFO | Answer 1: Welcome! I am delighted to tell you more about this wonderful piece. This is a classic example of Warli art, a tradition created by the Warli tribe from the Sahyadri mountain range in Maharashtra, India. Unlike many traditional Indian art forms that depict gods and epic myths, Warli paintings focus primarily on community life, harmony with nature, and daily rituals.
+
+If you look closely at the figures, you will notice their distinct geometric structure. Human and animal bodies are created using simple shapes—most notably, two triangles joined at the tip. In Warli philosophy, this balance of shapes symbolizes the harmony of the universe, where the top triangle represents the torso or sky, and the bottom represents the earth. The central drum, or *dhol*, is the heart of the scene, bringing the community together in a circular dance that celebrates life, harvests, and togetherness.
+
+Traditionally, these artworks were painted directly onto the mud and cow-dung walls of tribal homes during festivals and weddings. The beautiful reddish-brown background comes from a natural red ochre clay called *geru*. For the white paint, artists use a simple mix of ground rice paste, water, and natural gum, applying it with a chewed bamboo twig that serves as a brush.
+
+It is a charming and timeless art form that transforms simple lines and shapes into a vibrant story of human connection. Would you like to know more about the symbols, traditional music, or how Warli art is made today?
+2026-08-06 21:19:11,046 | INFO | User question: no

@@ -1,0 +1,24 @@
+2026-08-08 20:14:38,465 | INFO | Log file: C:\Users\shiva\Downloads\art-expert (2)\art-expert\logs\session_20260808_201438.log
+2026-08-08 20:14:38,466 | INFO | Running startup checks...
+2026-08-08 20:14:38,467 | INFO | Found: C:\Users\shiva\Downloads\art-expert (2)\art-expert\prompt.txt
+2026-08-08 20:14:38,467 | INFO | Found: C:\Users\shiva\Downloads\art-expert (2)\art-expert\expert_prompt.txt
+2026-08-08 20:14:38,468 | INFO | Checking offline speech model...
+2026-08-08 20:14:38,469 | ERROR | Fatal error.
+Traceback (most recent call last):
+  File "c:\Users\shiva\Downloads\art-expert (2)\art-expert\main.py", line 461, in main
+    _, art_context = prepare_initial_art_context(image_arg)
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "c:\Users\shiva\Downloads\art-expert (2)\art-expert\main.py", line 348, in prepare_initial_art_context
+    startup_check(None)
+    ~~~~~~~~~~~~~^^^^^^
+  File "c:\Users\shiva\Downloads\art-expert (2)\art-expert\main.py", line 181, in startup_check
+    speech.get_vosk_model()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "c:\Users\shiva\Downloads\art-expert (2)\art-expert\speech.py", line 45, in get_vosk_model
+    return _load_vosk_model(str(Path(model_path).resolve()))
+  File "c:\Users\shiva\Downloads\art-expert (2)\art-expert\speech.py", line 32, in _load_vosk_model
+    raise FileNotFoundError(
+    ...<2 lines>...
+    )
+FileNotFoundError: Vosk model folder not found: C:\Users\shiva\Downloads\art-expert (2)\models\vosk-model-small-en-us-0.15\vosk-model-small-en-us-0.15
+Put the unpacked model here or set VOSK_MODEL_PATH.

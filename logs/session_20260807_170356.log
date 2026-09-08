@@ -1,0 +1,30 @@
+2026-08-07 17:03:56,271 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260807_170356.log
+2026-08-07 17:03:56,271 | INFO | Running startup checks...
+2026-08-07 17:03:56,271 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-07 17:03:56,271 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-07 17:03:56,271 | INFO | Found: E:\pythonProject\art-expert\images\sample2.jpg
+2026-08-07 17:03:56,271 | INFO | Checking offline speech model...
+2026-08-07 17:03:56,677 | INFO | Vosk model loaded.
+2026-08-07 17:03:56,678 | INFO | Checking Piper TTS...
+2026-08-07 17:03:56,679 | INFO | Piper TTS ready.
+2026-08-07 17:03:56,679 | INFO | Microphone detected.
+2026-08-07 17:03:56,679 | INFO | Startup checks complete.
+2026-08-07 17:03:56,679 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample2.jpg
+2026-08-07 17:03:56,748 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 17:04:15,750 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 17:04:34,494 | INFO | User question: tell me more about it
+2026-08-07 17:04:34,495 | INFO | Gemini attempt 1/3
+2026-08-07 17:04:34,496 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 17:04:42,059 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 17:04:42,307 | INFO | Answer 1: This vibrant art form comes from the Pardhan tribe in central India. It transforms ancient tribal folklore and sacred nature into mesmerizing visual stories where everything is interconnected. It comes from Madhya Pradesh, India. It became famous because It gained global acclaim for its imaginative use of fine lines, dots, and brilliant... Its cultural impact is Originally painted on mud walls during festivals, these artworks honor sacred trees and spirits...
+2026-08-07 17:05:29,193 | INFO | User question: who made it famous
+2026-08-07 17:05:29,193 | INFO | Gemini attempt 1/3
+2026-08-07 17:05:29,193 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 17:05:38,020 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 17:05:39,349 | INFO | Answer 2: A visionary tribal artist named Jangarh Singh Shyam brought this art style to international fame in the 1980s. It comes from Madhya Pradesh, India. It became famous because He was the first Pardhan Gond artist to move traditional festival wall paintings onto... Its cultural impact is His success opened doors for his entire community, encouraging young artists to keep their...
+2026-08-07 17:06:20,725 | INFO | User question: how is it different from other art states
+2026-08-07 17:06:20,725 | INFO | Gemini attempt 1/3
+2026-08-07 17:06:20,726 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 17:06:28,696 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 17:06:28,838 | INFO | Answer 3: Gond art stands out from other Indian folk styles through its unique texturing technique. While many traditional art forms use flat colors or focus mainly on deities, Gond... It comes from Madhya Pradesh, India. It became famous because Famous for its vibrant signature patterns and imaginative nature storytelling. Its cultural impact is Reflects the tribal belief that displaying beautiful nature art brings good luck.
+2026-08-07 17:07:09,702 | INFO | User question: no

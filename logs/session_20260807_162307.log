@@ -1,0 +1,27 @@
+2026-08-07 16:23:07,466 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260807_162307.log
+2026-08-07 16:23:07,466 | INFO | Running startup checks...
+2026-08-07 16:23:07,466 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-07 16:23:07,466 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-07 16:23:07,466 | INFO | Found: E:\pythonProject\art-expert\images\sample2.jpg
+2026-08-07 16:23:07,466 | INFO | Checking offline speech model...
+2026-08-07 16:23:07,769 | INFO | Vosk model loaded.
+2026-08-07 16:23:07,769 | INFO | Checking Piper TTS...
+2026-08-07 16:23:07,770 | INFO | Piper TTS ready.
+2026-08-07 16:23:07,770 | INFO | Microphone detected.
+2026-08-07 16:23:07,771 | INFO | Startup checks complete.
+2026-08-07 16:23:07,771 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample2.jpg
+2026-08-07 16:23:07,826 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 16:23:20,294 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 16:23:42,082 | INFO | User question: i would like to know more about it
+2026-08-07 16:23:42,085 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 16:23:49,925 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 16:23:49,927 | INFO | Answer 1: Namaste! This Gond painting comes from the Pardhan Gond community in Madhya Pradesh, Central India. Gond art is celebrated worldwide for its vibrant nature storytelling, where sacred trees... It became famous because It gained international recognition when traditional mud-wall paintings were brought onto paper and canvas... Its cultural impact is The Gond people believe that viewing beautiful images brings good luck and honors the... A key feature is A pattern-filled blue trunk with deep roots and leaves in warm shades of red...
+2026-08-07 16:24:47,117 | INFO | User question: who made it famous
+2026-08-07 16:24:47,118 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 16:25:01,584 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 16:25:01,596 | INFO | Answer 2: Gond art reached global fame thanks to a legendary master artist named Jangarh Singh Shyam. In the 1980s, he brought traditional mud-wall art onto paper and canvas, creating... It comes from Madhya Pradesh, Central India. It became famous because Jangarh Singh Shyam was discovered by renowned artist J. Swaminathan. His vibrant creations wowed... Its cultural impact is His success empowered the Pardhan Gond community to preserve their sacred nature stories while...
+2026-08-07 16:25:51,664 | INFO | User question: can these be seen in modern times
+2026-08-07 16:25:51,666 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 16:26:04,623 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-07 16:26:04,637 | INFO | Answer 3: Yes, absolutely! Gond art is thriving in modern times. You can spot these vibrant designs in international art galleries, modern home decor, fashion apparel, and even illustrated children's... It comes from Madhya Pradesh, Central India. It became famous because It successfully evolved from traditional mud walls to canvas and contemporary design. Its cultural impact is It gives indigenous artists a global platform to earn a living while keeping their...
+2026-08-07 16:26:48,168 | INFO | User question: no

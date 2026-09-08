@@ -1,0 +1,75 @@
+2026-08-06 16:30:23,197 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260806_163023.log
+2026-08-06 16:30:23,198 | INFO | Running startup checks...
+2026-08-06 16:30:23,198 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-06 16:30:23,198 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-06 16:30:23,198 | INFO | Found: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 16:30:23,198 | INFO | Checking offline speech model...
+2026-08-06 16:30:23,515 | INFO | Vosk model loaded.
+2026-08-06 16:30:23,516 | INFO | Checking Piper TTS...
+2026-08-06 16:30:23,517 | INFO | Piper TTS ready.
+2026-08-06 16:30:23,517 | INFO | Microphone detected.
+2026-08-06 16:30:23,517 | INFO | Startup checks complete.
+2026-08-06 16:30:23,517 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 16:30:23,520 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 16:30:45,182 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 16:31:24,092 | INFO | User question: i want to know more about it
+2026-08-06 16:31:24,093 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 16:31:25,942 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-08-06 16:31:25,943 | ERROR | Expert module failed.
+Traceback (most recent call last):
+  File "E:\pythonProject\art-expert\main.py", line 242, in run_conversation
+    answer = expert.ask_expert(
+             ^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\expert.py", line 116, in ask_expert
+    response = client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\models.py", line 6602, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\models.py", line 5028, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1708, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1495, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1472, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\errors.py", line 155, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\errors.py", line 186, in raise_error
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-08-06 16:32:02,794 | INFO | User question: i want to know more about this
+2026-08-06 16:32:02,794 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 16:32:22,689 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 16:32:22,691 | INFO | Answer 1: Welcome! What you are looking at is a classic piece of Warli art, a traditional tribal art form originating from Maharashtra in western India. The striking contrast you see comes from using a pigment made of crushed rice paste on a rich, earthy red background, which was traditionally prepared using mud, rust, or cow dung. 
+
+This particular piece depicts a lively village musical celebration. Notice how the people are painted using simple geometric shapes—specifically, two inverted triangles joined at the tip. In Warli culture, these shapes carry deeper meaning: the upper triangle represents the torso, while the lower represents the waist, symbolically balancing the human form with the rhythms of nature.
+
+Unlike many other traditional Indian art forms, Warli art rarely focuses on mythical deities. Instead, it celebrates the harmony of everyday life, community gatherings, and natural cycles. The decorative geometric border framing the scene completes this joyful snippet of tribal life. 
+
+Would you like to explore the symbolism, the history, or how these traditional designs are created today?
+2026-08-06 16:33:54,507 | INFO | User question: no

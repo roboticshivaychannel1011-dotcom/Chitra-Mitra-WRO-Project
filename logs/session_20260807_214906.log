@@ -1,0 +1,14 @@
+2026-08-07 21:49:06,293 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260807_214906.log
+2026-08-07 21:49:06,293 | INFO | Running startup checks...
+2026-08-07 21:49:06,293 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-07 21:49:06,293 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-07 21:49:06,293 | INFO | Found: E:\pythonProject\art-expert\images\sample2.jpg
+2026-08-07 21:49:06,293 | INFO | Checking offline speech model...
+2026-08-07 21:49:06,619 | INFO | Vosk model loaded.
+2026-08-07 21:49:06,619 | INFO | Checking Piper TTS...
+2026-08-07 21:49:06,620 | INFO | Piper TTS ready.
+2026-08-07 21:49:06,620 | INFO | Microphone detected.
+2026-08-07 21:49:06,620 | INFO | Startup checks complete.
+2026-08-07 21:49:06,620 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample2.jpg
+2026-08-07 21:49:06,668 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-07 21:49:26,296 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"

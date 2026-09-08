@@ -1,0 +1,67 @@
+2026-08-08 17:41:59,327 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260808_174159.log
+2026-08-08 17:41:59,328 | INFO | Running startup checks...
+2026-08-08 17:41:59,328 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-08 17:41:59,328 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-08 17:41:59,328 | INFO | Checking offline speech model...
+2026-08-08 17:41:59,328 | INFO | Vosk model loaded.
+2026-08-08 17:41:59,328 | INFO | Checking Piper TTS...
+2026-08-08 17:41:59,329 | INFO | Piper TTS ready.
+2026-08-08 17:41:59,329 | INFO | Microphone detected.
+2026-08-08 17:41:59,329 | INFO | Startup checks complete.
+2026-08-08 17:41:59,329 | INFO | Capturing artwork from webcam...
+2026-08-08 17:42:07,385 | INFO | Captured artwork image: E:\pythonProject\art-expert\captures\artwork.jpg
+2026-08-08 17:42:07,385 | INFO | Capture reason: Image captured successfully.
+2026-08-08 17:42:07,386 | INFO | Capture metrics: {'brightness': 195.6999062541851, 'contrast': 50.35560720419283, 'blur_score': 150.39293810452702, 'center_edge_density': 0.07540363590134758}
+2026-08-08 17:42:07,386 | INFO | Identifying artwork from webcam capture...
+2026-08-08 17:42:07,388 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 17:42:22,523 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-08-08 17:42:22,524 | ERROR | UI session failed
+Traceback (most recent call last):
+  File "E:\pythonProject\art-expert\ui.py", line 445, in _session_worker
+    image_path, art_context = backend.prepare_initial_art_context(None)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\main.py", line 369, in prepare_initial_art_context
+    art_context = vision.identify_art(image_path)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\vision.py", line 628, in identify_art
+    response = client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\models.py", line 6602, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\models.py", line 5028, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1708, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1495, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1472, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\errors.py", line 155, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\errors.py", line 186, in raise_error
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}

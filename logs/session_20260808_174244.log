@@ -1,0 +1,20 @@
+2026-08-08 17:42:44,120 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260808_174244.log
+2026-08-08 17:42:44,120 | INFO | Running startup checks...
+2026-08-08 17:42:44,120 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-08 17:42:44,120 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-08 17:42:44,120 | INFO | Checking offline speech model...
+2026-08-08 17:42:44,121 | INFO | Vosk model loaded.
+2026-08-08 17:42:44,121 | INFO | Checking Piper TTS...
+2026-08-08 17:42:44,121 | INFO | Piper TTS ready.
+2026-08-08 17:42:44,121 | INFO | Microphone detected.
+2026-08-08 17:42:44,121 | INFO | Startup checks complete.
+2026-08-08 17:42:44,121 | INFO | Capturing artwork from webcam...
+2026-08-08 17:42:51,707 | INFO | Captured artwork image: E:\pythonProject\art-expert\captures\artwork.jpg
+2026-08-08 17:42:51,708 | INFO | Capture reason: Image captured successfully.
+2026-08-08 17:42:51,708 | INFO | Capture metrics: {'brightness': 182.59101140004984, 'contrast': 55.473332398708244, 'blur_score': 158.98177605580182, 'center_edge_density': 0.08314744704798936}
+2026-08-08 17:42:51,708 | INFO | Identifying artwork from webcam capture...
+2026-08-08 17:42:51,710 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 17:42:59,414 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-08 17:42:59,416 | INFO | Successfully captured image: E:\pythonProject\art-expert\captures\artwork.jpg
+2026-08-08 17:43:14,939 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-08 17:43:22,234 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"

@@ -1,0 +1,79 @@
+2026-08-06 13:38:48,813 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260806_133848.log
+2026-08-06 13:38:48,813 | INFO | Running startup checks...
+2026-08-06 13:38:48,813 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-06 13:38:48,813 | INFO | Found: E:\pythonProject\art-expert\expert_prompt.txt
+2026-08-06 13:38:48,814 | INFO | Found: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 13:38:48,814 | INFO | Checking offline speech model...
+2026-08-06 13:38:49,113 | INFO | Vosk model loaded.
+2026-08-06 13:38:49,113 | INFO | Checking Piper TTS...
+2026-08-06 13:38:49,114 | INFO | Piper TTS ready.
+2026-08-06 13:38:49,114 | INFO | Microphone detected.
+2026-08-06 13:38:49,114 | INFO | Startup checks complete.
+2026-08-06 13:38:49,114 | INFO | Identifying artwork from: E:\pythonProject\art-expert\images\sample1.jpg
+2026-08-06 13:38:49,118 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 13:38:55,864 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 13:39:20,615 | INFO | User question: i wanted to know more about it how it got famous
+2026-08-06 13:39:20,615 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 13:39:39,677 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 13:39:39,702 | INFO | Answer 1: For centuries, Warli art was a hidden treasure, practiced quietly by the indigenous Warli tribe in the coastal and mountainous regions of Maharashtra. Traditionally, it wasn't meant for galleries or commercial sale at all. Instead, local women painted these vivid, monochromatic scenes on the mud walls of their homes during special occasions like harvests, weddings, and sacred rituals to bring good fortune.
+
+Its journey to national and global fame really took off in the 1970s, largely thanks to a visionary artist named Jivya Soma Mashe. Encouraged by Indian cultural preservers, he broke tradition by shifting the art form from ritual mud walls onto portable paper and canvas. Mashe’s exquisite skill and storytelling caught the attention of the art world, leading to international exhibitions in places like France and the UK, and earning him major national honors in India.
+
+What captivated people around the world was Warli’s brilliant simplicity. By using basic geometric shapes—circles representing the sun and moon, triangles representing trees and mountains, and the iconic hourglass bodies you see here—it creates a universal language celebrating life, community, and nature. Today, you can spot this ancient tribal style not just in fine art galleries, but also on modern fashion, home decor, and large public murals around the globe!
+2026-08-06 13:41:21,989 | INFO | User question: no i don't have any other question thank you
+2026-08-06 13:41:21,989 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 13:41:23,971 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 503 Service Unavailable"
+2026-08-06 13:41:23,971 | ERROR | Expert module failed.
+Traceback (most recent call last):
+  File "E:\pythonProject\art-expert\main.py", line 206, in run_conversation
+    answer = expert.ask_expert(
+             ^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\expert.py", line 116, in ask_expert
+    response = client.models.generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\models.py", line 6602, in generate_content
+    response = self._generate_content(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\models.py", line 5028, in _generate_content
+    response = self._api_client.request(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1708, in request
+    response = self._request(http_request, http_options, stream=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1495, in _request
+    return self._retry(self._request_once, http_request, stream)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 413, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 184, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python311\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\tenacity\__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\_api_client.py", line 1472, in _request_once
+    errors.APIError.raise_for_response(response)
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\errors.py", line 155, in raise_for_response
+    cls.raise_error(response.status_code, response_json, response)
+  File "E:\pythonProject\art-expert\venv\Lib\site-packages\google\genai\errors.py", line 186, in raise_error
+    raise ServerError(status_code, response_json, response)
+google.genai.errors.ServerError: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}
+2026-08-06 13:41:39,937 | INFO | User question: no i don't have any other question thank you
+2026-08-06 13:41:39,938 | INFO | AFC is enabled with max remote calls: 10.
+2026-08-06 13:41:55,689 | INFO | HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-flash-latest:generateContent "HTTP/1.1 200 OK"
+2026-08-06 13:41:55,692 | INFO | Answer 2: You are most welcome! It was an absolute pleasure sharing the story of Warli art with you today. 
+
+If you ever want to explore more traditional art forms or have questions in the future, I will be right here to help. Have a wonderful rest of your day!
+2026-08-06 13:42:19,273 | INFO | Interrupted by user.

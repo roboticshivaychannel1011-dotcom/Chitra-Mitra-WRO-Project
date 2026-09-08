@@ -1,0 +1,10 @@
+2026-08-06 12:51:09,435 | INFO | Log file: E:\pythonProject\art-expert\logs\session_20260806_125109.log
+2026-08-06 12:51:09,435 | INFO | Running startup checks...
+2026-08-06 12:51:09,435 | INFO | Found: E:\pythonProject\art-expert\prompt.txt
+2026-08-06 12:51:09,435 | ERROR | Fatal error.
+Traceback (most recent call last):
+  File "E:\pythonProject\art-expert\main.py", line 239, in main
+    startup_check(image_path)
+  File "E:\pythonProject\art-expert\main.py", line 142, in startup_check
+    raise FileNotFoundError(f"Missing required file: {item}")
+FileNotFoundError: Missing required file: E:\pythonProject\art-expert\expert_prompt.txt
